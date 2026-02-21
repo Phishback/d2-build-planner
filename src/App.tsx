@@ -1,8 +1,7 @@
-import ClassSelection from './pages/ClassSelection';
+import ClassSelection from "./pages/ClassSelection";
 
 function App() {
-
-  return <ClassSelection />
+  return <ClassSelection />;
 }
 
 export default App;

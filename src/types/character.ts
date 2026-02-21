@@ -3,8 +3,8 @@ import { type PerLevelGains } from "./perLevelGains";
 import { type StatPerLevelGains } from "./statPerLevelGain";
 
 export interface CharacterClass {
-  name: string,
-  baseStats: BaseStats,
-  perLevelGain: PerLevelGains,
-  statPerLevelGains: StatPerLevelGains
+  name: string;
+  baseStats: BaseStats;
+  perLevelGain: PerLevelGains;
+  statPerLevelGains: StatPerLevelGains;
 }

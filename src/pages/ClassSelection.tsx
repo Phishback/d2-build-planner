@@ -12,7 +12,7 @@ const ClassSelection = () => {
         </button>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default ClassSelection
+export default ClassSelection;
