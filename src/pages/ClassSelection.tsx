@@ -1,12 +1,17 @@
 import ClassesList from "../data/classes";
+import type { CharacterClass } from "../types/character";
 
-const ClassSelection = () => {
+type ClassSelectionProps = {
+  onSelectClass: (characterClass: CharacterClass) => void;
+};
+
+const ClassSelection = ({ onSelectClass }: ClassSelectionProps) => {
   return (
     <div>
       {Object.values(ClassesList).map((characterClass) => (
         <button
           key={characterClass.name}
-          onClick={() => console.log(characterClass)}
+          onClick={() => onSelectClass(characterClass)}
         >
           {characterClass.name}
         </button>
