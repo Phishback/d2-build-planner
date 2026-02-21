@@ -1,10 +1,11 @@
 import type { CharacterClass } from "../types/character";
 
 type CharacterSheetProps = {
-  selectedClass: CharacterClass
+  selectedClass: CharacterClass;
+  onBack: () => void;
 }
 
-const CharacterSheet = ({ selectedClass }: CharacterSheetProps) => {
+const CharacterSheet = ({ selectedClass, onBack }: CharacterSheetProps) => {
   return (
     <div>
       <p>Class: {selectedClass.name}</p>
@@ -14,6 +15,7 @@ const CharacterSheet = ({ selectedClass }: CharacterSheetProps) => {
           <li key={stat}>{stat} : {statValue}</li>
         )}
       </ul>
+      <button onClick={onBack}>Back</button>
     </div>
   )
 }

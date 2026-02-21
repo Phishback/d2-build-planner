@@ -9,7 +9,9 @@ function App() {
 
   return (
     selectedClass ?
-      <CharacterSheet selectedClass={selectedClass} /> : <ClassSelection onSelectClass={setSelectedClass} />
+      <CharacterSheet selectedClass={selectedClass} onBack={() => setSelectedClass(null)} />
+      :
+      <ClassSelection onSelectClass={setSelectedClass} />
   );
 }
 
